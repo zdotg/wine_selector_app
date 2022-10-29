@@ -17,7 +17,6 @@ CREATE TABLE users (
     username TEXT UNIQUE NOT NULL
 )
 
-
 -- General wine attribute tables
 
 CREATE TABLE notes (

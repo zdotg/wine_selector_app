@@ -24,7 +24,9 @@
         <iframe width="600" height="400" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=natural%20wine%20in%20Asheville%2C%20NC&key=AIzaSyC-jskRkUS3Fhnr9EmLqeK2Rb_nd7yjX2k"></iframe>
         <section>
             <p>We pull wine suggestions based on surrounding shops' inventory.</p>
-            <label for="wine_list">What do you seek from the cellar?</label>
+            <!-- i plan to dynamically populate this label with the questions that will lead to the users selection output -->
+            <label for="wine_genie">What do you seek from the cellar?</label>
+            <!-- The select dropdown will also be dynamically populated. Once color is selected, the app will ask what flavor profile the user is looking for then output the selection. -->
             <select name="wine_list" id="wine_list">
                 <option value="default">inventory</option>
                 <option id="red" value="red_wine">Red Wine</option>
@@ -34,6 +36,7 @@
                 <option id="pet_nat" value="petnat">Pet-nat</option>
                 <option id="bubbles" value="bubbly_wine">Bubbly Wine</option>
             </select>
+            <!-- I plan to expand this so the user can go so far as to select from a specific country or region, maybe even varietal at some point. -->
         </section>
         <div id="wine_suggestions"></div>
     </div>

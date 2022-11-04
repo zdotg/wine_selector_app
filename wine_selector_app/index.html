@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Landing page</title>
 </head>
 <body>
-    <section>
-        <h1>Welcome to Zach's Wine Selector!</h1>
-        <p>This is a test</p>
-    </section>
-    
+    <div class="wrapper">
+        <header>
+            <h1>Natural Wine Seeker</h1>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="join_us.html">Join Us</a>
+            </ul>   
+        </header>
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=natural%20wine%20in%20Asheville%2C%20NC&key=AIzaSyC-jskRkUS3Fhnr9EmLqeK2Rb_nd7yjX2k"></iframe>
+        <section>
+            <p>We pull wine suggestions based on surrounding shops' inventory.</p>
+            <label for="wine_list">What do you seek from the cellar?</label>
+            <select name="wine_list" id="wine_list">
+                <option value="default">inventory</option>
+                <option id="red" value="red_wine">Red Wine</option>
+                <option id="white" value="white_wine">White Wine</option>
+                <option id="orange" value="orange_wine">Orange Wine</option>
+                <option id="rose" value="rose_wine">Rose Wine</option>
+                <option id="pet_nat" value="petnat">Pet-nat</option>
+                <option id="bubbles" value="bubbly_wine">Bubbly Wine</option>
+            </select>
+        </section>
+        <div id="wine_suggestions"></div>
+    </div>
+<script src="wine_selector.js"></script>
 </body>
 </html>
